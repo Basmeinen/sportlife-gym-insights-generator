@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -98,4 +92,20 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold text-primary;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-duxblue to-secondary bg-clip-text text-transparent;
+  }
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
